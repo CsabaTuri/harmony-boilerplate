@@ -633,20 +633,18 @@ In our project we apply the sagas middleware only with 1 root index file.<br/>
 <span class="kr">export</span> <span class="k">default</span> <span class="nx">catalogSaga</span><span class="p">;</span>
 </code></pre></div>
 
-<p>!!! tip "Redux Sagas"</p>
-<pre><code>For more information, read on https://github.com/redux-saga/redux-saga &lt;br/&gt;
+<div class="admonition tip">
+<p class="admonition-title">Redux Sagas</p>
+<p>For more information, read on <a href="https://github.com/redux-saga/redux-saga">https://github.com/redux-saga/redux-saga</a> <br/>
 What is takeLatest?
-```JS
-(alias) takeLatest&lt;any, any&gt;(pattern: Pattern&lt;any&gt;, worker: HelperFunc1&lt;any, any&gt;, arg1: any): ForkEffect (+5 overloads)
-import takeLatest
-```
-
-Alternatively you may use takeLatest.
-
-Does not allow concurrent fetches of user. If "SOME_ACTION" gets
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nx">alias</span><span class="p">)</span> <span class="nx">takeLatest</span><span class="o">&lt;</span><span class="nx">any</span><span class="p">,</span> <span class="nx">any</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">pattern</span><span class="o">:</span> <span class="nx">Pattern</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span><span class="p">,</span> <span class="nx">worker</span><span class="o">:</span> <span class="nx">HelperFunc1</span><span class="o">&lt;</span><span class="nx">any</span><span class="p">,</span> <span class="nx">any</span><span class="o">&gt;</span><span class="p">,</span> <span class="nx">arg1</span><span class="o">:</span> <span class="nx">any</span><span class="p">)</span><span class="o">:</span> <span class="nx">ForkEffect</span> <span class="p">(</span><span class="o">+</span><span class="mi">5</span> <span class="nx">overloads</span><span class="p">)</span>
+<span class="kr">import</span> <span class="nx">takeLatest</span>
+</code></pre></div></p>
+<p>Alternatively you may use takeLatest.</p>
+<p>Does not allow concurrent fetches of user. If "SOME_ACTION" gets
 dispatched while a fetch is already pending, that pending fetch is cancelled
-and only the latest one will be run.
-</code></pre>
+and only the latest one will be run.</p>
+</div>
                 
               
               

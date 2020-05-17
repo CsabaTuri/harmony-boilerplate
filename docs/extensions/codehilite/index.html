@@ -762,11 +762,12 @@
 <p><a href="https://pythonhosted.org/Markdown/extensions/code_hilite.html">CodeHilite</a> is an extension that adds syntax highlighting to code blocks
 and is included in the standard Markdown library. The highlighting process is
 executed during compilation of the Markdown file.</p>
-<p>!!! failure "Syntax highlighting not working?"</p>
-<pre><code>Please ensure that [Pygments][2] is installed. See the next section for
+<div class="admonition failure">
+<p class="admonition-title">Syntax highlighting not working?</p>
+<p>Please ensure that <a href="http://pygments.org">Pygments</a> is installed. See the next section for
 further directions on how to set up Pygments or use the official
-[Docker image][3] with all dependencies pre-installed.
-</code></pre>
+<a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">Docker image</a> with all dependencies pre-installed.</p>
+</div>
 <h2 id="installation">Installation</h2>
 <p>CodeHilite parses code blocks and wraps them in <code>pre</code> tags. If <a href="http://pygments.org">Pygments</a>
 is installed, which is a generic syntax highlighter with support for over
@@ -780,13 +781,14 @@ be installed with the following command:</p>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite</span>
 </code></pre></div>
 
-<p>!!! warning "Migrating from Material 0.2.x"</p>
-<pre><code>In 0.2.x the CodeHilite extension was included with
-`codehilite(css_class=code)` which switched the CSS class from
-`.codehilite` to `.code`. The current version of the theme doesn't require
-that and defines styles for the default `.codehilite` class, so the part
-`css_class=code` needs to be removed.
-</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Migrating from Material 0.2.x</p>
+<p>In 0.2.x the CodeHilite extension was included with
+<code>codehilite(css_class=code)</code> which switched the CSS class from
+<code>.codehilite</code> to <code>.code</code>. The current version of the theme doesn't require
+that and defines styles for the default <code>.codehilite</code> class, so the part
+<code>css_class=code</code> needs to be removed.</p>
+</div>
 <h2 id="usage">Usage</h2>
 <h3 id="specifying-the-language">Specifying the language</h3>
 <p>The CodeHilite extension uses the same syntax as regular Markdown code blocks,

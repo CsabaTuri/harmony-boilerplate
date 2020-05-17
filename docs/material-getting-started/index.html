@@ -703,11 +703,12 @@
                 
                 <h1 id="getting-started">Getting started</h1>
 <h2 id="installation">Installation</h2>
-<p>!!! tip "Set up Material using Docker"</p>
-<pre><code>The official [Docker image][1] for Material comes with all dependencies
+<div class="admonition tip">
+<p class="admonition-title">Set up Material using Docker</p>
+<p>The official <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">Docker image</a> for Material comes with all dependencies
 pre-installed and ready-to-use with the latest version published on PyPI,
-packaged in a very small image (28MB compressed).
-</code></pre>
+packaged in a very small image (28MB compressed).</p>
+</div>
 <h3 id="installing-mkdocs">Installing MkDocs</h3>
 <p>Before installing <a href="http://www.mkdocs.org">MkDocs</a>, you need to make sure you have Python and <code>pip</code>
 – the Python package manager – up and running. You can verify if you're already
@@ -723,9 +724,10 @@ pip --version
 <span class="c1"># mkdocs, version 0.16.0</span>
 </code></pre></div>
 
-<p>!!! warning "MkDocs version requirements"</p>
-<pre><code>Material requires MkDocs &gt;= 0.16.
-</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">MkDocs version requirements</p>
+<p>Material requires MkDocs &gt;= 0.16.</p>
+</div>
 <p>Furthermore, it is highly recommended to install <a href="http://pygments.org">Pygments</a> and the
 <a href="http://facelessuser.github.io/pymdown-extensions/">PyMdown Extensions</a> to get the most out of the Material theme:</p>
 <div class="highlight"><pre><span></span><code>pip install pygments
@@ -755,25 +757,31 @@ repository into a subfolder of your project's root directory:</p>
 parts of the theme. The theme will reside in the folder
 <code>mkdocs-material/material</code>.</p>
 <h3 id="troubleshooting">Troubleshooting</h3>
-<p>!!! warning "Installation on macOS"</p>
-<pre><code>When you're running the pre-installed version of Python on macOS, `pip`
+<div class="admonition warning">
+<p class="admonition-title">Installation on macOS</p>
+<p>When you're running the pre-installed version of Python on macOS, <code>pip</code>
 tries to install packages in a folder for which your user might not have
-the adequate permissions. There are two possible solutions for this:
-
-1. **Installing in user space** (recommended): Provide the `--user` flag
-  to the install command and `pip` will install the package in a user-site
-  location. This is the recommended way.
-
-2. **Switching to a homebrewed Python**: Upgrade your Python installation
+the adequate permissions. There are two possible solutions for this:</p>
+<ol>
+<li>
+<p><strong>Installing in user space</strong> (recommended): Provide the <code>--user</code> flag
+  to the install command and <code>pip</code> will install the package in a user-site
+  location. This is the recommended way.</p>
+</li>
+<li>
+<p><strong>Switching to a homebrewed Python</strong>: Upgrade your Python installation
   to a self-contained solution by installing Python with Homebrew. This
-  should eliminate a lot of problems you may be having with `pip`.
-</code></pre>
-<p>!!! failure "Error: unrecognized theme 'material'"</p>
-<pre><code>If you run into this error, the most common reason is that you installed
-MkDocs through some package manager (e.g. Homebrew or `apt-get`) and the
-Material theme through `pip`, so both packages end up in different
-locations. MkDocs only checks it's install location for themes.
-</code></pre>
+  should eliminate a lot of problems you may be having with <code>pip</code>.</p>
+</li>
+</ol>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Error: unrecognized theme 'material'</p>
+<p>If you run into this error, the most common reason is that you installed
+MkDocs through some package manager (e.g. Homebrew or <code>apt-get</code>) and the
+Material theme through <code>pip</code>, so both packages end up in different
+locations. MkDocs only checks it's install location for themes.</p>
+</div>
 <h2 id="usage">Usage</h2>
 <p>In order to enable the Material theme just add one of the following lines to
 your <code>mkdocs.yml</code>. If you installed Material using pip:</p>
@@ -902,14 +910,15 @@ big screens and as part of the main navigation drawer on smaller screen sizes.
 Furthermore, if <code>repo_url</code> points to a GitHub, BitBucket or GitLab repository,
 the respective service logo will be shown next to the name of the repository.
 Additionally, for GitHub, the number of stars and forks is shown.</p>
-<p>!!! warning "Why is there an edit button at the top of every article?"</p>
-<pre><code>If the `repo_url` is set to a GitHub or BitBucket repository, and the
-`repo_name` is set to *GitHub* or *BitBucket* (implied by default), an
+<div class="admonition warning">
+<p class="admonition-title">Why is there an edit button at the top of every article?</p>
+<p>If the <code>repo_url</code> is set to a GitHub or BitBucket repository, and the
+<code>repo_name</code> is set to <em>GitHub</em> or <em>BitBucket</em> (implied by default), an
 edit button will appear at the top of every article. This is the automatic
-behavior that MkDocs implements. See the [MkDocs documentation][15] on more
-guidance regarding the `edit_uri` attribute, which defines whether the edit
-button is shown or not.
-</code></pre>
+behavior that MkDocs implements. See the <a href="http://www.mkdocs.org/user-guide/configuration/#edit_uri">MkDocs documentation</a> on more
+guidance regarding the <code>edit_uri</code> attribute, which defines whether the edit
+button is shown or not.</p>
+</div>
 <h3 id="adding-a-logo">Adding a logo</h3>
 <p>Material makes it easy to add your logo. Your logo should have rectangular
 shape with a minimum resolution of 128x128, leave some room towards the edges

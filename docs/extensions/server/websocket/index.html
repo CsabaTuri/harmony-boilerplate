@@ -567,8 +567,10 @@
 <span class="p">};</span>
 </code></pre></div></p>
 <h2 id="websocket-actions">Websocket Actions</h2>
-<p>!!! warning "<strong>SECURE WARNING</strong> - You must to declare your <code>allowed actions</code> in server config."
-    If the action is not allowed on the server, the action will not be executed !</p>
+<div class="admonition warning">
+<p class="admonition-title"><strong>SECURE WARNING</strong> - You must to declare your <code>allowed actions</code> in server config.</p>
+<p>If the action is not allowed on the server, the action will not be executed !</p>
+</div>
 <ul>
 <li>To add allowed actions for broadcasting go to <a href="#config">config</a> and edit allowedActions 
 <div class="highlight"><pre><span></span><code> allowedActions: [
@@ -595,7 +597,9 @@ In addition, there is option to invoke the broadcasting service from each API.</
     <span class="p">...</span>
     <span class="nx">req</span><span class="p">.</span><span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;wss&#39;</span><span class="p">).</span><span class="nx">broadcast</span><span class="p">(</span><span class="nx">YOUR_MESSAGE</span><span class="p">);</span>
 </code></pre></div></p>
-<p>!!! tip "For more information check how you deal with the websocket from the client side"</p>
+<div class="admonition tip">
+<p class="admonition-title">For more information check how you deal with the websocket from the client side</p>
+</div>
                 
               
               

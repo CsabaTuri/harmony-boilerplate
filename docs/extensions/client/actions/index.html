@@ -539,10 +539,11 @@ In the following files you declare about the actions types and export them.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">UPDATE_MYSTATE</span> <span class="o">=</span> <span class="nx">exports</span><span class="p">.</span><span class="nx">UPDATE_MYSTATE</span> <span class="o">=</span> <span class="s1">&#39;UPDATE_MYSTATE&#39;</span><span class="p">;</span>
 </code></pre></div>
 
-<p>!!! warning "Actions type declaration "</p>
-<pre><code>actions type declaration - Declaration for actions type must to be with es5.&lt;br/&gt;
-The reason is that the action types is shared with server for websocket actions system.
-</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Actions type declaration </p>
+<p>actions type declaration - Declaration for actions type must to be with es5.<br/>
+The reason is that the action types is shared with server for websocket actions system.</p>
+</div>
 <p>Declare <code>actions types</code> under <code>( /actions_myActions.js )</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="kr">export</span> <span class="kd">function</span> <span class="nx">updateSomeState</span> <span class="p">(</span><span class="nx">newData</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="p">{</span>
@@ -552,9 +553,11 @@ The reason is that the action types is shared with server for websocket actions 
 <span class="p">}</span>
 </code></pre></div>
 
-<p>!!! tip "Actions file names"
-    cli automatically add your actions file to /actions/myActionsName/.<br/>
-    It added 1 file called actions_myActionsName. actions_ prefix added automatically</p>
+<div class="admonition tip">
+<p class="admonition-title">Actions file names</p>
+<p>cli automatically add your actions file to /actions/myActionsName/.<br/>
+It added 1 file called actions_myActionsName. actions_ prefix added automatically</p>
+</div>
 <h2 id="create-actions-files-by-cli">Create Actions files by cli</h2>
 <div class="highlight"><pre><span></span><code><span class="nx">$</span> <span class="nx">gulp</span> <span class="nx">createActionFile</span> <span class="o">--</span><span class="nx">name</span> <span class="nx">myActionsName</span>
 </code></pre></div>
